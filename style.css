@@ -1,14 +1,39 @@
 * {
-  background-color: rgb(233, 135, 135);
   color: aliceblue;
 }
 
 body {
   margin: 0px;
+  background-color: rgb(233, 135, 135);
+}
+
+h1 {
+  margin-left: 4rem;
+}
+
+.top-hero {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  background-color: black;
+  padding: 1rem;
 }
 
 content {
-  margin: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#introduction > ul {
+  margin-left: 4rem;
+}
+
+#products > ul {
+  margin-left: 4rem;
 }
 
 .item-container {
@@ -35,8 +60,35 @@ content {
   object-fit: contain;
 }
 
+.kakugen-container {
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
 .kakugen-button {
   background-color: aliceblue;
   color: black;
   cursor: pointer;
+}
+
+.tech-container {
+  display: flex;
+  gap: 2rem;
+  margin: auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-card {
+  width: 300px;
+  flex-shrink: 0;
+  background-color: brown;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.tech-list {
+  text-align: start;
+  width: 260px;
 }
