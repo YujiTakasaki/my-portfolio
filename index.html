@@ -8,34 +8,122 @@
     <title>さっきーのポートフォリオ</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="item-container">
         <a href="#top" class="header-item">トップ</a>
+        <a href="#introduction" class="header-item">基本情報</a>
         <a href="#products" class="header-item">製作物</a>
         <a href="#kakugen-section" class="header-item">格言</a>
       </div>
     </header>
     <content>
       <div id="top">
-        <div class="image-container">
-          <img class="boku-img" src="boku.jpg" alt="父の画像" />
+        <h1>トップ</h1>
+        <div class="top-hero">
+          <div class="image-container">
+            <img class="boku-img" src="boku.jpg" alt="自画像" />
+          </div>
+          <div class="hero-text">僕の高校3年生の姿です(右)</div>
         </div>
-        <div>僕の高校3年生の姿です(右)</div>
+      </div>
+      <div id="introduction">
+        <h1>基本情報</h1>
+        <ul>
+          <li><a href="https://qiita.com/Sacky_0729">Qiita</a></li>
+          <li><a href="https://zenn.dev/handojisan">Zenn</a></li>
+          <li><a href="https://github.com/YujiTakasaki">GitHub</a></li>
+        </ul>
+      </div>
+      <div id="tech">
+        <h1>使用可能言語</h1>
+        <div class="tech-container">
+          <div class="tech-card">
+            <h4>実務経験有</h4>
+            <ul class="tech-list">
+              <li>HTML CSS</li>
+              <li>JavaScript (Vue.js), Node.js (Express)</li>
+              <li>Google Apps Script</li>
+            </ul>
+          </div>
+          <div class="tech-card">
+            <h4>プロダクト制作経験あり</h4>
+            <ul class="tech-list">
+              <li>Swift</li>
+              <li>C#(Unity)</li>
+            </ul>
+          </div>
+          <div class="tech-card">
+            <h4>趣味レベル</h4>
+            <ul class="tech-list">
+              <li>
+                C++ (<a href="https://atcoder.jp/users/Hand1"
+                  >競技プログラミング</a
+                >)
+              </li>
+              <li>Ruby on Rails</li>
+              <li>React.js</li>
+              <li>Python</li>
+              <li>PHP (WordPress)</li>
+              <li>Dart (Flutter)</li>
+              <li>Solidity</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="products">
-        <h1>過去のプロダクト</h1>
-        <p><a href="https://charisou.web.app/">チャリ走的なやつ</a></p>
-        <p>
-          <a href="https://handojisan.github.io/angry-choice/"
-            >アングリーチョイス
-          </a>
-        </p>
-        <p><a href="https://piraty-project.web.app/">Piraty</a></p>
+        <h1>制作物</h1>
+        <ul>
+          <li>
+            2020/11/13
+            <a href="https://charisou.web.app/">チャリ走 Like なゲーム</a
+            ><br />使用技術: Unity
+          </li>
+
+          <li>
+            2021/05/17
+            <a href="https://geek-salon-products.com/"
+              >インターン先のプログラミングスクールのプロダクト集積サイト</a
+            ><br />使用技術: Vue2, Vuetify, Figma, Firebase
+          </li>
+          <li>
+            2021/12/20
+            <a href="https://line.me/R/ti/p/%40968anbea"
+              >応援してくれるLineBot</a
+            ><br />使用技術: Google Apps Script
+          </li>
+          <li>
+            2022/03/15
+            <a
+              href="https://apps.apple.com/au/app/%E3%81%94%E9%A3%AF%E7%A5%9E%E3%81%AE%E3%81%8A%E5%91%8A%E3%81%92/id1614162577"
+              >ご飯屋さんをリコメンドする iPhone アプリ </a
+            ><br />使用技術: Swift, Figma
+          </li>
+          <li>
+            2022/03/20
+            <a href="https://yujitakasaki.github.io/angry-choice/"
+              >怒られないように選択肢を選ぶゲーム(※音量注意) </a
+            ><br />使用技術: TyranoScript
+          </li>
+          <li>
+            2022/06/05
+            <a href="https://unityroom.com/games/kotodama-akuma"
+              >ことだまを集めて言葉を理解するゲーム</a
+            ><br />使用技術: Unity, Blender
+          </li>
+          <li>
+            2022/11/23
+            <a href="https://sambashi.co.jp"
+              >サンバシ株式会社 HP (コーディング担当)</a
+            ><br />使用技術: Vue3, TypeScripnt, TailwindCSS, MicroCMS, Apache
+          </li>
+        </ul>
       </div>
       <div id="kakugen-section">
-        <h1>格言</h1>
-        <div id="kakugen">弟より優れた兄などいない!</div>
-        <button class="kakugen-button" id="kakugen-button">格言言えよ</button>
+        <h1>格言Bot</h1>
+        <div class="kakugen-container">
+          <div id="kakugen">弟より優れた兄などいない!</div>
+          <button class="kakugen-button" id="kakugen-button">格言言えよ</button>
+        </div>
       </div>
     </content>
     <script src="main.js"></script>
